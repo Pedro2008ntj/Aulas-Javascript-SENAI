@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="95mtquente">
+    <title>EXERCICÍO 01 - JAVASCRIPT</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="Pedro" content="Pedro Davi, deusimarsousa85@gmail.com">
+
+</head>
+<body>
+    <h1>Integrando os rcursos do JS</h1>
+    <hr>
+    <script>
+         window.confirm("Seja bem-vindo ao site ");
+         let nome = window.prompt ("QUAL É O SEU NOME? ");
+         window.alert(nome);
+         console.log(nome);
+         let resposta = window.confirm("você deseja sair da página? ");
+         
+         if(resposta==true){
+            setTimeout(() => {
+                window.open("index.html");
+            
+            }, 3000); // 3000 milissegundos = 3 segundos
+
+        }else{
+            window.confirm(nome + ", você vai continar nessa página!");
+        }
+         
+    </script>
+</body>
+</html>

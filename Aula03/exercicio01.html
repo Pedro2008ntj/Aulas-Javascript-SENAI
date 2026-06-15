@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="95mtquente">
+    <title>EXERCÍCIO 1 - AULA 03 - JAVASCRIPT</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="Pedro" content="Pedro Davi, deusimarsousa85@gmail.com">
+</head>
+
+<body>
+    <h1><mark>EXERCÍCIO 1</mark> DO HTML ATRAVÉS DO JS</h1>
+    <hr>
+    <div>
+        <img id="Imagem principal" src="img/feliz.jpg" alt="Imagem do Desafio" title="95quente" width="300">
+        <button onclick="trocarimagem1()">Trocar Imagem 1</button>
+        <button onclick="trocarimagem2()">Trocar Imagem 2</button>
+    </div>
+    <hr>
+
+    <script>
+        function trocarimagem1() {
+
+            var imagem = document.getElementsByTagName('img')[0];
+            console.log(imagem)
+            imagem.src="img/triste.jpg";
+
+        
+            } 
+            function trocarimagem2(){
+            var imagem = document.getElementsByTagName('img')[0];
+            console.log(imagem)
+            imagem.src="img/feliz.jpg";
+
+            }
+                
+     
+
+    </script>
+</body>
+
+</html>

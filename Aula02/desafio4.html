@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="95mtquente">
+    <title>AULA 02 - JAVASCRIPT</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="Pedro" content="Pedro Davi, deusimarsousa85@gmail.com">
+</head>
+
+<body>
+    <h1><mark>DESAFIO 4</mark> DO HTML ATRAVÉS DO JS</h1>
+    <hr>
+    <div>
+        <img id="Imagem principal" src="img/95quente.jpg" alt="Imagem do Desafio" title="95quente" width="300">
+        <button onclick="trocarimagem()">Trocar Imagem</button>
+
+    </div>
+    <hr>
+
+    <script>
+        function trocarimagem() {
+
+            const imagem = document.getElementsByTagName('img')[0];
+
+            if (imagem.title=="95quente") {
+                imagem.src="img/95chave.jpg";
+                imagem.title="95chave"
+            } else {
+                imagem.src="img/95quente.jpg";
+                imagem.title="95quente"
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
